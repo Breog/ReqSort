@@ -1,0 +1,11 @@
+text,label
+"Users can cancel their orders.",FUNCTIONAL
+"Customers can update their personal information.",FUNCTIONAL
+"Users should be able to download their invoices.",FUNCTIONAL
+"Administrators can deactivate user accounts.",FUNCTIONAL
+"The system must respond within 2 seconds.",NON_FUNCTIONAL
+"The application must be available 99.9% of the time.",NON_FUNCTIONAL
+"Passwords must contain at least 8 characters.",CONSTRAINT
+"Users must verify their email before making a purchase.",BUSINESS_RULE
+"Orders can only be cancelled within 24 hours.",BUSINESS_RULE
+"The system shall support up to 1000 concurrent users.",NON_FUNCTIONAL

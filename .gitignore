@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python cache
+.pytest_cache/
+.mypy_cache/
+
+# Hugging Face / ML cache
+.cache/
+huggingface/
+wandb/
+
+# Local trained models
+model/
+models/
+
+# Environment variables
+.env
+.env.*
+
+# Logs
+*.log
