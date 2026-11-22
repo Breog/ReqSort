@@ -8,30 +8,52 @@ __pycache__/
 venv/
 env/
 
-# IDE
+# IDE / editors
 .vscode/
 .idea/
+*.swp
 
 # OS
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # Python cache
 .pytest_cache/
 .mypy_cache/
+.ipynb_checkpoints/
 
 # Hugging Face / ML cache
 .cache/
 huggingface/
 wandb/
 
-# Local trained models
+# Local trained models (the web copy lives in web/ai/ and IS committed)
 model/
 models/
+checkpoints/
 
-# Environment variables
+# Generated evaluation outputs
+outputs/
+data/test_predictions.csv
+
+# Environment variables and secrets
 .env
 .env.*
+*.pem
+*.key
+
+# Vercel CLI (project and org IDs of your account)
+.vercel/
+
+# Claude Code personal settings
+.claude/settings.local.json
+
+# Node (in case tooling is added later)
+node_modules/
 
 # Logs
 *.log
+
+# Claude
+CLAUDE.md

@@ -1,0 +1,401 @@
+﻿text,label
+Library fines are capped at the replacement cost of the borrowed item.,BUSINESS_RULE
+Merchandise returned without its original packaging is subject to a 15% restocking fee.,BUSINESS_RULE
+The system shall send a reminder to borrowers three days before a loaned item is due.,FUNCTIONAL
+A purchase from a new supplier requires a signed framework agreement.,BUSINESS_RULE
+The parking app lets drivers extend their parking session remotely.,FUNCTIONAL
+Players can create a private match and invite friends with a code.,FUNCTIONAL
+The solution must reuse the existing SAP ERP as the master source of customer data.,CONSTRAINT
+Analysts can save a custom report filter and reuse it later.,FUNCTIONAL
+A booking is confirmed only after a deposit of 20% has been paid.,BUSINESS_RULE
+The total page weight of the landing page must stay below 1 MB.,NON_FUNCTIONAL
+Tenants submit maintenance requests with an optional photo of the problem.,FUNCTIONAL
+"The reporting layer must be implemented in Power BI, the organisation's standard BI tool.",CONSTRAINT
+The platform shows a history of all price changes for a product.,FUNCTIONAL
+A user can invite colleagues to a shared workspace by email.,FUNCTIONAL
+New team members should be able to set up the development environment in less than one hour.,NON_FUNCTIONAL
+Users can archive a chat conversation so that it no longer appears in their inbox.,FUNCTIONAL
+Seniors over 65 receive a 50% discount on public transport passes.,BUSINESS_RULE
+The ticket subject line is limited to 120 characters.,CONSTRAINT
+Sales representatives earn a 5% commission on the net value of each closed deal.,BUSINESS_RULE
+Container images must be based on the organisation's approved Red Hat UBI base image.,CONSTRAINT
+The inventory system generates a reorder suggestion when stock falls below the minimum quantity.,FUNCTIONAL
+The system shall display a map showing the current location of every vehicle in the fleet.,FUNCTIONAL
+The order number must start with the prefix ORD followed by eight digits.,CONSTRAINT
+Employees can carry over a maximum of five unused vacation days into the next year.,BUSINESS_RULE
+A library member can renew a borrowed book up to two times from the mobile app.,FUNCTIONAL
+Data exchanged with partners must be transferred via SFTP.,CONSTRAINT
+Every failed login attempt must be recorded in a tamper-evident security log.,NON_FUNCTIONAL
+"Contracts above 100,000 euros must go through a public tender.",BUSINESS_RULE
+Policyholders who make no claims for five years receive a 30% no-claims discount.,BUSINESS_RULE
+A new cashier should be able to complete a sale without assistance after a 30-minute training session.,NON_FUNCTIONAL
+The release date is fixed by contract and cannot be moved beyond 31 March.,CONSTRAINT
+Monitoring must alert the on-call engineer within two minutes when error rates exceed normal levels.,NON_FUNCTIONAL
+Orders placed after 2 p.m. are shipped the next working day.,BUSINESS_RULE
+Customs officers can flag a shipment for physical inspection.,FUNCTIONAL
+Refunds are issued to the original payment method only.,BUSINESS_RULE
+Code changes must be deployable to production in less than 15 minutes.,NON_FUNCTIONAL
+The dashboard should refresh live sensor data at least every three seconds.,NON_FUNCTIONAL
+A comment cannot be longer than 500 characters.,CONSTRAINT
+The game must maintain at least 30 frames per second on entry-level smartphones.,NON_FUNCTIONAL
+Database queries behind the main screens must execute in under 200 ms.,NON_FUNCTIONAL
+Medical data must be handled in accordance with HIPAA.,CONSTRAINT
+Journalists can save a draft article and send it to an editor for review.,FUNCTIONAL
+Team members can react to a message with an emoji.,FUNCTIONAL
+The software shall convert a saved recipe into a printable shopping list.,FUNCTIONAL
+The platform sends a weekly digest summarising unread notifications.,FUNCTIONAL
+The system must interface with the legacy mainframe through nightly flat-file transfers.,CONSTRAINT
+Notifications must reach users' devices within ten seconds of the triggering event.,NON_FUNCTIONAL
+Third-party libraries must be scanned for known vulnerabilities on every build.,NON_FUNCTIONAL
+The payroll system produces a payslip for each employee at the end of the month.,FUNCTIONAL
+Contextual help must be available for every form field.,NON_FUNCTIONAL
+"A landlord can publish a property listing with photos, price, and availability dates.",FUNCTIONAL
+Telephone numbers must be stored in E.164 format.,CONSTRAINT
+Reports must be generated as PDF/A documents for long-term archiving.,CONSTRAINT
+Dispatchers can reassign an emergency call to the nearest available ambulance.,FUNCTIONAL
+"Full-text search must be implemented with Apache Solr, which the operations team already maintains.",CONSTRAINT
+The platform suggests related articles at the end of each knowledge base page.,FUNCTIONAL
+A seller is paid only after the buyer confirms receipt of the goods.,BUSINESS_RULE
+The platform shall isolate each tenant's data so that no customer can view another customer's records.,NON_FUNCTIONAL
+The tool imports bank transactions from an OFX file and matches them to open invoices.,FUNCTIONAL
+Modules must be loosely coupled so that the billing component can be replaced independently.,NON_FUNCTIONAL
+At least 80% of the business logic must be covered by automated unit tests.,NON_FUNCTIONAL
+Damaged goods reported more than seven days after delivery are not eligible for replacement.,BUSINESS_RULE
+Shipments containing lithium batteries must travel by ground transport only.,BUSINESS_RULE
+Applicants can upload their CV and cover letter when applying for a job.,FUNCTIONAL
+"The platform shall remain available 99.9% of the time, excluding planned maintenance.",NON_FUNCTIONAL
+Users can switch the interface language from their profile settings.,FUNCTIONAL
+Vehicle identification numbers must be exactly 17 characters long.,CONSTRAINT
+Products with less than three months of shelf life left are sold at half price.,BUSINESS_RULE
+The application must integrate with the existing Twilio account for sending SMS.,CONSTRAINT
+The system highlights overdue invoices in red on the finance dashboard.,FUNCTIONAL
+The system must not use any open-source component licensed under the GPL.,CONSTRAINT
+The API must return an error response rather than crash when it receives malformed input.,NON_FUNCTIONAL
+"When a flight is delayed by more than an hour, passengers receive a push notification with the new departure time.",FUNCTIONAL
+Plant operators can pause a production line from the control panel.,FUNCTIONAL
+The browser extension must use Manifest V3.,CONSTRAINT
+New customers must pay in advance until they have completed three orders.,BUSINESS_RULE
+Gift cards cannot be exchanged for cash.,BUSINESS_RULE
+Python 3.12 must be used for all data processing scripts.,CONSTRAINT
+Encryption keys must be rotated at least once every 90 days.,NON_FUNCTIONAL
+Sick leave longer than three consecutive days requires a medical certificate.,BUSINESS_RULE
+"Patients can book, reschedule, or cancel a video consultation with their general practitioner.",FUNCTIONAL
+Event organisers can export the attendee list as a spreadsheet.,FUNCTIONAL
+Employees must have at least six months of service before they can request remote work.,BUSINESS_RULE
+Vendors must provide proof of insurance before being added to the approved supplier list.,BUSINESS_RULE
+"Lost cards are replaced free of charge once per year, and subsequent replacements cost 10 euros.",BUSINESS_RULE
+Engineers can attach log files to a bug report.,FUNCTIONAL
+A course runs only if at least eight students enrol.,BUSINESS_RULE
+The application must run on the company's existing PostgreSQL 16 cluster.,CONSTRAINT
+Nightly batch jobs must finish within a four-hour window.,NON_FUNCTIONAL
+Call centre agents can view a caller's previous interactions while the call is in progress.,FUNCTIONAL
+Staff members are never allowed to sign off on reimbursements they requested themselves.,BUSINESS_RULE
+Payment transactions must be processed only through the bank's approved payment gateway.,CONSTRAINT
+Users with colour blindness must be able to distinguish all chart series.,NON_FUNCTIONAL
+A job offer requires the signatures of both the hiring manager and the HR director.,BUSINESS_RULE
+The service must not lose any queued messages if a broker restarts.,NON_FUNCTIONAL
+The first release must go live before the start of the academic year on 1 September.,CONSTRAINT
+Batch files exchanged with the bank must follow the fixed-width layout specified by the bank.,CONSTRAINT
+The solution must be compatible with the existing Citrix virtual desktop environment.,CONSTRAINT
+Parking permits are issued only to residents registered at an address within the zone.,BUSINESS_RULE
+The kiosk prints a boarding pass after the passenger scans their passport.,FUNCTIONAL
+Unclaimed lost property is donated to charity after 90 days.,BUSINESS_RULE
+Personal health data must be encrypted both at rest and in transit.,NON_FUNCTIONAL
+Students can view their exam results once the lecturer releases them.,FUNCTIONAL
+The system lets travellers split a hotel booking payment between two cards.,FUNCTIONAL
+Any screen in the app must be reachable within three taps from the home screen.,NON_FUNCTIONAL
+The application shall calculate the total shipping cost based on parcel weight and destination.,FUNCTIONAL
+The CRM records every phone call logged by a sales representative against the related contact.,FUNCTIONAL
+Administrative actions must be traceable to the individual who performed them.,NON_FUNCTIONAL
+Country names must be selected from the ISO 3166-1 list.,CONSTRAINT
+Single sign-on must be implemented with SAML 2.0.,CONSTRAINT
+Memory usage of the background agent must stay below 200 MB on client machines.,NON_FUNCTIONAL
+Quantities must be expressed in metric units.,CONSTRAINT
+"Invoices are due within 30 days of issue, after which a late fee of 2% applies.",BUSINESS_RULE
+"Map data must come from OpenStreetMap, because commercial map licences are not funded.",CONSTRAINT
+Stock transfers between branches require approval from both store managers.,BUSINESS_RULE
+A coach can record attendance for each training session.,FUNCTIONAL
+The system shall allow an editor to schedule a blog post for publication at a future date.,FUNCTIONAL
+Salespeople may offer discounts of up to 10% without managerial approval.,BUSINESS_RULE
+"The solution must be deployed on Microsoft Azure, as required by the corporate cloud agreement.",CONSTRAINT
+Accounts inactive for two years are closed and any remaining balance is transferred to the customer.,BUSINESS_RULE
+The kiosk interface must be readable in direct sunlight.,NON_FUNCTIONAL
+The application shall scale horizontally to support twice the current number of users without code changes.,NON_FUNCTIONAL
+The checkout page lets shoppers apply a gift card to their order.,FUNCTIONAL
+The device software must be developed according to the IEC 62304 standard for medical device software.,CONSTRAINT
+Moderators can hide a forum post and notify its author of the reason.,FUNCTIONAL
+"The system must sustain 2,000 orders per minute during seasonal sales peaks.",NON_FUNCTIONAL
+The app must be distributed only through the company's private enterprise app store.,CONSTRAINT
+The device firmware must fit within 512 KB of flash memory.,CONSTRAINT
+Bulk email campaigns of one million recipients must be dispatched within one hour.,NON_FUNCTIONAL
+Children under three travel free when sitting on an adult's lap.,BUSINESS_RULE
+The system must authenticate users through the existing Active Directory domain.,CONSTRAINT
+The voice assistant must correctly recognise at least 95% of spoken commands in a quiet room.,NON_FUNCTIONAL
+"Withdrawals above 10,000 euros per day require identity verification at a branch.",BUSINESS_RULE
+The reporting database must be refreshed with operational data at least every 15 minutes.,NON_FUNCTIONAL
+"The system's mean time between failures must exceed 2,000 hours.",NON_FUNCTIONAL
+Users must be warned before any irreversible action such as deleting a project.,NON_FUNCTIONAL
+Bulk orders of more than 100 units receive a 12% volume discount.,BUSINESS_RULE
+Interns may not sign contracts on behalf of the company.,BUSINESS_RULE
+Customers with three missed payments are placed on a credit hold.,BUSINESS_RULE
+Invoices must be issued in the UBL 2.1 XML format.,CONSTRAINT
+"The app records the distance, duration and route of each run the user tracks.",FUNCTIONAL
+Users should find the item they are looking for on the first page of search results 90% of the time.,NON_FUNCTIONAL
+Free trial users are limited to three projects.,BUSINESS_RULE
+Log files must be rotated automatically so they never fill more than 70% of the disk.,NON_FUNCTIONAL
+Uploaded files must be scanned for malware before other users can open them.,NON_FUNCTIONAL
+A tenant must give two months' notice before ending the lease.,BUSINESS_RULE
+The procurement system creates a purchase order from an approved requisition.,FUNCTIONAL
+Error messages shall explain the problem in plain language and suggest how to fix it.,NON_FUNCTIONAL
+Planned maintenance must not cause more than 30 minutes of downtime per month.,NON_FUNCTIONAL
+The system must integrate with the existing Salesforce instance via its standard REST API.,CONSTRAINT
+Recruiters can move a candidate between pipeline stages by dragging their card.,FUNCTIONAL
+Geographic coordinates must be stored using the WGS 84 reference system.,CONSTRAINT
+Only certified electricians may close a high-voltage maintenance order.,BUSINESS_RULE
+Access to medical records must be protected by multi-factor authentication.,NON_FUNCTIONAL
+The accounting module generates a monthly profit and loss statement for each cost centre.,FUNCTIONAL
+Point-of-sale terminals must keep working for at least four hours on battery during a power outage.,NON_FUNCTIONAL
+All passwords must be stored as salted hashes and never in plain text.,NON_FUNCTIONAL
+Users can delete their account and all associated personal data from the settings page.,FUNCTIONAL
+Dates must be displayed in the DD/MM/YYYY format throughout the application.,CONSTRAINT
+Audio recordings must be stored in the FLAC format.,CONSTRAINT
+The software must comply with the Section 508 procurement requirements of the US federal government.,CONSTRAINT
+Only customers aged 18 or older may open a brokerage account.,BUSINESS_RULE
+An order is considered abandoned if the customer does not pay within 24 hours.,BUSINESS_RULE
+Configuration changes must take effect without restarting the service.,NON_FUNCTIONAL
+All infrastructure must be defined as code using Terraform.,CONSTRAINT
+Students can add an elective course to their timetable from the course catalogue.,FUNCTIONAL
+Mobile push notifications must be sent through Firebase Cloud Messaging.,CONSTRAINT
+The system must handle daylight saving time transitions without duplicating or skipping scheduled jobs.,NON_FUNCTIONAL
+Font sizes must be adjustable up to 200% without loss of content or functionality.,NON_FUNCTIONAL
+A driver with more than six penalty points may not operate company vehicles.,BUSINESS_RULE
+Users can sign documents electronically by drawing their signature.,FUNCTIONAL
+The application shall show temperature readings in Fahrenheit when the user selects imperial units.,FUNCTIONAL
+The service must continue to operate in read-only mode if the primary database becomes unavailable.,NON_FUNCTIONAL
+The system shall notify subscribers when a product they follow comes back in stock.,FUNCTIONAL
+The system shall support a tenfold increase in stored documents over the next five years.,NON_FUNCTIONAL
+The system must comply with the GDPR regarding the processing of personal data.,CONSTRAINT
+Clinic staff can print a list of tomorrow's appointments for each doctor.,FUNCTIONAL
+"Inventory is valued using the first-in, first-out method.",BUSINESS_RULE
+Users can bookmark a recipe and find it later in their favourites list.,FUNCTIONAL
+Gym members can join a waiting list when a fitness class is full.,FUNCTIONAL
+Customers can leave a star rating and a written review after receiving an order.,FUNCTIONAL
+Security patches must be applied to production servers within 72 hours of release.,NON_FUNCTIONAL
+User sessions must expire after 15 minutes of inactivity.,NON_FUNCTIONAL
+The app's installation package must be smaller than 50 MB.,NON_FUNCTIONAL
+Cashiers can process a refund for a returned item by scanning the original receipt.,FUNCTIONAL
+The navigation structure should be intuitive enough that users rarely need the search bar.,NON_FUNCTIONAL
+"The integration with the warehouse must use the vendor's SOAP web service, since no other interface is available.",CONSTRAINT
+"Premium subscribers can book classes up to 14 days in advance, while standard members can book only 3 days ahead.",BUSINESS_RULE
+The application must be packaged as a Docker container image.,CONSTRAINT
+The map service must return route calculations in under 500 ms for 95% of requests.,NON_FUNCTIONAL
+The app must work offline and synchronise changes within one minute of reconnecting.,NON_FUNCTIONAL
+The sensor firmware must operate unattended for at least twelve months between maintenance visits.,NON_FUNCTIONAL
+The system must be developed by the in-house team without external contractors.,CONSTRAINT
+Supervisors can approve or reject timesheets submitted by their team.,FUNCTIONAL
+The postal code field must accept exactly five digits.,CONSTRAINT
+The system must interoperate with the national tax agency's e-invoicing API.,CONSTRAINT
+The application must be published through the company's existing NGINX reverse proxy.,CONSTRAINT
+The system must use the existing Oracle licence and may not introduce another commercial database.,CONSTRAINT
+"The team must use Scrum with two-week sprints, as defined by the project management office.",CONSTRAINT
+Customer records must be stored exclusively in data centres located within the European Union.,CONSTRAINT
+Search should tolerate common spelling mistakes in product names.,NON_FUNCTIONAL
+"A loan application above 50,000 euros must be approved by two credit officers.",BUSINESS_RULE
+Each team may register a maximum of 15 players for the season.,BUSINESS_RULE
+Expense claims must be submitted within 60 days of the expense being incurred.,BUSINESS_RULE
+"Write-offs of more than 5,000 euros require approval from the chief financial officer.",BUSINESS_RULE
+Backups must be restorable within two hours.,NON_FUNCTIONAL
+Administrators can create user roles and assign permissions to them.,FUNCTIONAL
+Users must be able to reset their password through a link sent to their registered email address.,FUNCTIONAL
+The application must store files in Amazon S3 buckets owned by the client.,CONSTRAINT
+"Online exam submissions must never be lost, even if a student's connection drops.",NON_FUNCTIONAL
+Interest on savings accounts is calculated daily and paid monthly.,BUSINESS_RULE
+The recovery point objective for the order database must not exceed five minutes.,NON_FUNCTIONAL
+Animations should be reduced when the operating system's reduced-motion setting is enabled.,NON_FUNCTIONAL
+Prices must be stored with exactly two decimal places in the database.,CONSTRAINT
+A customer is entitled to a replacement when the delivered item is confirmed to be defective on arrival.,BUSINESS_RULE
+The video player must start playback within one second of the user pressing play.,NON_FUNCTIONAL
+The bank account number field must follow the IBAN format.,CONSTRAINT
+Suppliers are paid 60 days after the invoice date.,BUSINESS_RULE
+The software must be released under the Apache 2.0 licence.,CONSTRAINT
+Customers in the gold tier receive priority boarding on every flight.,BUSINESS_RULE
+Each order may contain at most 99 line items.,CONSTRAINT
+The website must display correctly on screens from 320 to 3840 pixels wide.,NON_FUNCTIONAL
+Promotional codes are limited to one use per customer.,BUSINESS_RULE
+Uploading a 100 MB file must take less than 30 seconds on a 100 Mbit connection.,NON_FUNCTIONAL
+Exporting a full year of transactions must complete in under one minute.,NON_FUNCTIONAL
+Operators must be able to notice a critical alarm on the control room screen within one second.,NON_FUNCTIONAL
+Energy consumption per transaction should be 20% lower than in the legacy system.,NON_FUNCTIONAL
+Server-side code must run on Node.js 20 LTS.,CONSTRAINT
+Warehouse staff scan a pallet barcode to record its arrival at the loading dock.,FUNCTIONAL
+Students who fail more than two modules cannot progress to the next year.,BUSINESS_RULE
+"The streaming service must support 50,000 concurrent viewers during live events.",NON_FUNCTIONAL
+Flights booked with miles can be changed once without a fee.,BUSINESS_RULE
+Applicants must have held a valid driving licence for at least two years to rent a car.,BUSINESS_RULE
+Farmers can log the amount of fertiliser applied to each field.,FUNCTIONAL
+Report generation must not degrade the response time of the order entry screens.,NON_FUNCTIONAL
+The solution must run on-premises; public cloud hosting is not permitted.,CONSTRAINT
+Each household is eligible for no more than one energy subsidy per year.,BUSINESS_RULE
+Electronic signatures must comply with the eIDAS regulation.,CONSTRAINT
+"The data warehouse must be built on Snowflake, which has already been procured.",CONSTRAINT
+"The embedded controller must be programmed in C, because the vendor toolchain supports no other language.",CONSTRAINT
+Employee identifiers must follow the existing format of two letters followed by six digits.,CONSTRAINT
+Ninety percent of first-time users should complete registration in under three minutes.,NON_FUNCTIONAL
+"Shoppers can filter products by size, colour, and price range.",FUNCTIONAL
+The kiosk software must run on Windows 11 IoT Enterprise.,CONSTRAINT
+A project lead can set a deadline and an owner for each milestone.,FUNCTIONAL
+A dispatcher can print a packing slip for each outgoing order.,FUNCTIONAL
+The application must use OAuth 2.0 to authorise third-party API access.,CONSTRAINT
+The system must recover from a server crash with no loss of committed transactions.,NON_FUNCTIONAL
+Price changes for existing subscribers take effect at the start of their next billing cycle.,BUSINESS_RULE
+An insurance policy lapses if the premium is not paid within 30 days of the due date.,BUSINESS_RULE
+The ingestion pipeline must process 10 GB of log data per hour.,NON_FUNCTIONAL
+"Donations above 1,000 euros must be checked against the anti-money-laundering watchlist.",BUSINESS_RULE
+The authentication service must survive the failure of any single server without interrupting active sessions.,NON_FUNCTIONAL
+A vehicle must pass inspection before it can be listed for rental.,BUSINESS_RULE
+The ticketing system lets fans choose their seat from an interactive stadium plan.,FUNCTIONAL
+Documents must be stored in the existing SharePoint document library.,CONSTRAINT
+Claims handlers can request additional documents from the claimant.,FUNCTIONAL
+The energy portal shows households their daily electricity consumption in a chart.,FUNCTIONAL
+Tickets for sold-out concerts may be resold only at face value.,BUSINESS_RULE
+Peak memory consumption of the analytics job must stay under 16 GB.,NON_FUNCTIONAL
+API documentation must be regenerated automatically with every release.,NON_FUNCTIONAL
+A restaurant manager can mark a menu item as sold out for the rest of the day.,FUNCTIONAL
+Insurance agents can generate a quote by entering vehicle details and driver age.,FUNCTIONAL
+Hotel receptionists can check a guest in and issue a digital room key.,FUNCTIONAL
+User satisfaction with the new interface must reach at least 4 out of 5 in post-release surveys.,NON_FUNCTIONAL
+Map tiles must render smoothly at 60 frames per second while panning.,NON_FUNCTIONAL
+Clinical documents must be exchanged with hospitals using the HL7 CDA standard.,CONSTRAINT
+Customers who cancel within the 14-day cooling-off period receive a full refund.,BUSINESS_RULE
+Late homework submissions lose 10% of the mark for each day of delay.,BUSINESS_RULE
+Contractors can submit an invoice against a completed work order.,FUNCTIONAL
+The system shall allow a teacher to duplicate last year's course structure into a new term.,FUNCTIONAL
+A support case escalates to a senior agent if it remains unresolved after 48 hours.,BUSINESS_RULE
+Membership fees are prorated for members who join after the first of the month.,BUSINESS_RULE
+Product codes must consist of exactly 12 alphanumeric characters.,CONSTRAINT
+The robot control software must respond to an emergency stop signal within 50 milliseconds.,NON_FUNCTIONAL
+Parents can authorise their child's attendance at a school trip through the portal.,FUNCTIONAL
+"The frontend must be built with React, as mandated by the company's UI standards.",CONSTRAINT
+A hotel reservation cancelled less than 48 hours before arrival is charged one night's stay.,BUSINESS_RULE
+A scholarship is withdrawn if the student's average falls below 7.0.,BUSINESS_RULE
+"The website must be compatible with the latest two versions of Chrome, Firefox, Safari, and Edge.",CONSTRAINT
+The platform lets teachers attach rubric files to an assignment before publishing it.,FUNCTIONAL
+Rent increases may not exceed the annual consumer price index.,BUSINESS_RULE
+Email addresses must not exceed 254 characters.,CONSTRAINT
+The checkout page must load in under two seconds on a 4G mobile connection.,NON_FUNCTIONAL
+Patients under 16 need a guardian's consent before a non-emergency procedure.,BUSINESS_RULE
+Accounting entries must follow the national chart of accounts.,CONSTRAINT
+A doctor cannot prescribe controlled substances to themselves.,BUSINESS_RULE
+The barcode scanner integration must read labels correctly at least 99.5% of the time.,NON_FUNCTIONAL
+Users can connect their calendar so that booked sessions appear automatically.,FUNCTIONAL
+"A tenant's deposit must be returned within 30 days after the lease ends, minus documented damages.",BUSINESS_RULE
+Visitors can subscribe to the newsletter by entering their email address in the footer.,FUNCTIONAL
+The system automatically closes a support ticket when the customer confirms the issue is solved.,FUNCTIONAL
+Pharmacists can view a patient's active prescriptions before dispensing medication.,FUNCTIONAL
+Credit limits for corporate clients are reviewed every six months.,BUSINESS_RULE
+Orders over 200 euros qualify for free shipping.,BUSINESS_RULE
+The software must be delivered with user documentation in both English and Spanish.,CONSTRAINT
+The banking app allows customers to freeze their debit card instantly.,FUNCTIONAL
+Card payment handling must comply with PCI DSS.,CONSTRAINT
+A project cannot be closed while it has unpaid supplier invoices.,BUSINESS_RULE
+Managers must review each employee's performance at least once a year.,BUSINESS_RULE
+Courses cancelled by the academy are refunded in full within five working days.,BUSINESS_RULE
+The chatbot must respond to user messages within two seconds on average.,NON_FUNCTIONAL
+"The application must work with the existing thermal receipt printers, which only accept ESC/POS commands.",CONSTRAINT
+The application must provide a consistent look and feel across all its modules.,NON_FUNCTIONAL
+The system shall merge duplicate customer records after an operator confirms the match.,FUNCTIONAL
+Screen reader users must be able to complete the entire booking flow.,NON_FUNCTIONAL
+The payment service must process each transaction in less than 800 milliseconds end to end.,NON_FUNCTIONAL
+Drivers can mark a delivery as completed and capture the recipient's signature on screen.,FUNCTIONAL
+The voting module counts ballots and publishes the results when the poll closes.,FUNCTIONAL
+The backend must be written in Java 21 to match the organisation's existing services.,CONSTRAINT
+Researchers can share a dataset with named collaborators and revoke that access later.,FUNCTIONAL
+Data replication between regions must lag by no more than 30 seconds.,NON_FUNCTIONAL
+"Lab technicians enter test results, which are then linked to the corresponding sample ID.",FUNCTIONAL
+The hardware budget for the pilot is limited to ten servers.,CONSTRAINT
+"Product descriptions are limited to 2,000 characters.",CONSTRAINT
+Discounts cannot be applied to items already on clearance.,BUSINESS_RULE
+A grant applicant may submit only one proposal per funding call.,BUSINESS_RULE
+Passwords must be between 12 and 64 characters long.,CONSTRAINT
+Prices quoted to customers remain valid for 15 calendar days.,BUSINESS_RULE
+Overtime hours must be approved by the line manager before they are paid.,BUSINESS_RULE
+Loyalty points expire 12 months after they are earned.,BUSINESS_RULE
+Shareholders holding at least 3% of the capital may add items to the meeting agenda.,BUSINESS_RULE
+All timestamps must be persisted in Coordinated Universal Time.,CONSTRAINT
+A warranty repair is free during the first two years after purchase.,BUSINESS_RULE
+Hardware components must be purchased from the government's approved supplier list.,CONSTRAINT
+The public website must be built on the corporate WordPress platform.,CONSTRAINT
+The mobile app must support iOS 16 and later.,CONSTRAINT
+Volunteers must complete safeguarding training before working with minors.,BUSINESS_RULE
+A customer may return an unused item within 30 days of delivery for a full refund.,BUSINESS_RULE
+Customer data must never be exposed in application logs.,NON_FUNCTIONAL
+Auditors can download all supporting documents for a selected expense claim as a ZIP file.,FUNCTIONAL
+A claim reported more than one year after the incident is not covered.,BUSINESS_RULE
+The system shall be easy to localise into new languages without modifying source code.,NON_FUNCTIONAL
+"Usernames may contain only lowercase letters, digits, and underscores.",CONSTRAINT
+Unused mobile data rolls over to the next month for postpaid customers only.,BUSINESS_RULE
+The mobile app must not consume more than 5% of battery per hour of active use.,NON_FUNCTIONAL
+The scheduling module detects double bookings of a meeting room and warns the organiser.,FUNCTIONAL
+The system shall email a receipt to the donor immediately after a successful donation.,FUNCTIONAL
+The museum app plays an audio guide when the visitor scans the QR code next to an exhibit.,FUNCTIONAL
+Nurses can record vital signs at the bedside using a tablet.,FUNCTIONAL
+Members who refer a friend receive one free month once the friend's first payment clears.,BUSINESS_RULE
+Volunteers can sign up for available shifts on the community calendar.,FUNCTIONAL
+Members may borrow at most ten items at the same time.,BUSINESS_RULE
+The system generates a unique tracking number for every parcel.,FUNCTIONAL
+Machine learning models must be served using the company's existing TensorFlow Serving infrastructure.,CONSTRAINT
+Doctors can order laboratory tests directly from the patient's electronic record.,FUNCTIONAL
+Currency amounts must use ISO 4217 currency codes.,CONSTRAINT
+Food products cannot be returned once delivered unless they are damaged.,BUSINESS_RULE
+Employees working night shifts receive a 25% pay supplement.,BUSINESS_RULE
+The help desk tool automatically assigns new tickets to the agent with the fewest open cases.,FUNCTIONAL
+The software must run on the Raspberry Pi 4 hardware already installed in the stores.,CONSTRAINT
+Owners can register a pet and record its vaccination history.,FUNCTIONAL
+Tips collected by staff are shared equally among all employees on the shift.,BUSINESS_RULE
+The checkout process must be protected against cross-site request forgery attacks.,NON_FUNCTIONAL
+All text must be encoded in UTF-8.,CONSTRAINT
+Barcodes on shipping labels must use the GS1-128 symbology.,CONSTRAINT
+The platform must tolerate the loss of one data centre without user-visible downtime.,NON_FUNCTIONAL
+All APIs must follow REST conventions and return JSON payloads.,CONSTRAINT
+"Tax identification numbers must have exactly nine characters, the last of which is a check letter.",CONSTRAINT
+Source code must be hosted in the organisation's GitLab instance.,CONSTRAINT
+A credit note must reference the original invoice it corrects.,BUSINESS_RULE
+Subscribers can pause their meal kit deliveries for up to four weeks.,FUNCTIONAL
+Commuters can top up their transit card balance using a credit card.,FUNCTIONAL
+A failed deployment must be rolled back automatically within ten minutes.,NON_FUNCTIONAL
+The scheduling engine must compute a weekly roster for 500 employees in under ten seconds.,NON_FUNCTIONAL
+"The database must be MySQL 8, since the hosting provider supports no other engine.",CONSTRAINT
+Interface labels must be understandable to users with no technical background.,NON_FUNCTIONAL
+The system must remain responsive while a large file import runs in the background.,NON_FUNCTIONAL
+Users can upload a profile picture and crop it before saving.,FUNCTIONAL
+Users can compare up to four laptops side by side on the product page.,FUNCTIONAL
+Logging must use the organisation's central Elasticsearch stack.,CONSTRAINT
+Members must pay the annual fee before they can register for tournaments.,BUSINESS_RULE
+Employees on probation are not eligible for the annual bonus.,BUSINESS_RULE
+Store employees can look up the stock level of a product in nearby branches.,FUNCTIONAL
+File attachments must not exceed 25 MB each.,CONSTRAINT
+The application should start up in less than five seconds on a standard office laptop.,NON_FUNCTIONAL
+A table reservation not claimed within 15 minutes of the booked time is released to other diners.,BUSINESS_RULE
+Customer-facing pages must achieve a Lighthouse performance score of at least 90.,NON_FUNCTIONAL
+Patients who miss two appointments without notice must prepay future bookings.,BUSINESS_RULE
+The software must operate on ruggedised handheld devices running Android 12.,CONSTRAINT
+The first lesson of any course is free for new students.,BUSINESS_RULE
+"The project must be delivered within a budget of 250,000 euros.",CONSTRAINT
+The cluster must automatically replace any failed node within five minutes.,NON_FUNCTIONAL
+The system shall detect and alert on suspicious access patterns within one minute.,NON_FUNCTIONAL
+The service shall degrade gracefully by disabling recommendations when under heavy load.,NON_FUNCTIONAL
+The scanning module must use the TWAIN driver interface provided by the scanner manufacturer.,CONSTRAINT
+The platform lets an instructor grade quizzes automatically using an answer key.,FUNCTIONAL
+Images uploaded by users must be in JPEG or PNG format.,CONSTRAINT
+The system shall let the user undo the last change made to a document.,FUNCTIONAL
+Messages between microservices must be sent through the corporate Kafka cluster.,CONSTRAINT
+Employees accrue two vacation days for each full month worked.,BUSINESS_RULE
+The interface must be fully operable using only a keyboard.,NON_FUNCTIONAL
+The user interface must follow the organisation's published design system and colour palette.,CONSTRAINT
+Citizens can track the processing stage of their building permit application online.,FUNCTIONAL
+Penetration tests must find no critical vulnerabilities before each major release.,NON_FUNCTIONAL
+Members can download their annual tax certificate for charitable contributions.,FUNCTIONAL
+The website must meet WCAG 2.1 level AA accessibility guidelines.,NON_FUNCTIONAL
+A purchase order cannot be modified after the supplier has accepted it.,BUSINESS_RULE
+The project must reuse the existing customer database schema without structural changes.,CONSTRAINT
+The search API must handle 500 queries per second with a median latency below 150 ms.,NON_FUNCTIONAL

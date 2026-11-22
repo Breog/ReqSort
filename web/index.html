@@ -1,0 +1,104 @@
+<!doctype html>
+<!--
+  index.html: la estructura de la página.
+  Los textos que aparecen aquí son los de español por defecto; app.js los cambia según el idioma
+  (los elementos con data-i18n). Las partes que dependen del modelo (resultados, ejemplos,
+  tarjetas de categorías) están vacías y las rellena app.js.
+-->
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clasificador de requisitos</title>
+  <meta name="description" content="Clasifica requisitos de software con IA directamente en tu navegador.">
+  <!-- Icono de la pestaña, dibujado como SVG dentro del propio HTML (no necesita archivo aparte). -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%234f46e5'/><path d='M9 11h14M9 16h10M9 21h7' stroke='white' stroke-width='2.5' stroke-linecap='round'/></svg>">
+  <!-- Tipografía Inter de Google Fonts. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <!-- Barra superior: nombre de la app y selector de idioma. -->
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><rect width="32" height="32" rx="8"/><path d="M9 11h14M9 16h10M9 21h7"/></svg>
+        </span>
+        <span class="brand-name" data-i18n="brand">ReqSort</span>
+      </div>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="es">ES</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Cabecera con el título y la explicación de qué hace la app. -->
+      <section class="hero">
+        <p class="eyebrow" data-i18n="eyebrow">IA en tu navegador</p>
+        <h1 data-i18n="title">Clasifica requisitos de software al instante</h1>
+        <p class="subtitle" data-i18n="subtitle">Escribe un requisito y la IA te dirá si es funcional, no funcional, una regla de negocio o una restricción, y cómo mejorar su redacción.</p>
+      </section>
+
+      <!-- Cuadro donde se escriben los requisitos, botones de ejemplo, estado de carga y botón "Clasificar". -->
+      <section class="card composer">
+        <label for="input" class="label" data-i18n="inputLabel">Requisito (en inglés)</label>
+        <textarea id="input" rows="4" spellcheck="false" data-i18n-placeholder="placeholder"></textarea>
+        <p class="hint" data-i18n="hint">Escribe una frase por línea para clasificar varias a la vez.</p>
+
+        <div class="examples">
+          <span class="examples-title" data-i18n="examplesTitle">Prueba un ejemplo:</span>
+          <div class="chips" id="chips"></div>
+        </div>
+
+        <div class="actions">
+          <div class="status" id="status" aria-live="polite">
+            <div class="status-text" id="status-text"></div>
+            <div class="progress" id="progress" hidden><div class="progress-bar" id="progress-bar"></div></div>
+          </div>
+          <button type="button" class="btn-primary" id="classify" disabled>
+            <span data-i18n="classify">Clasificar</span>
+            <kbd>Ctrl ↵</kbd>
+          </button>
+        </div>
+      </section>
+
+      <!-- Resultados: empieza vacío y lo rellena app.js tras clasificar.
+           aria-live hace que los lectores de pantalla anuncien los resultados nuevos. -->
+      <section id="results" class="results" aria-live="polite"></section>
+
+      <!-- Explicación de las cuatro categorías (las tarjetas las crea app.js). -->
+      <section class="categories">
+        <h2 data-i18n="categoriesTitle">Las cuatro categorías</h2>
+        <div class="category-grid" id="category-grid"></div>
+      </section>
+    </main>
+
+    <!-- Pie: datos del modelo y aviso de privacidad. -->
+    <footer class="footer">
+      <p data-i18n="footerModel">Modelo DistilBERT ajustado con ~1.400 requisitos · 96 % de acierto en un test de 400 frases.</p>
+      <p data-i18n="footerPrivacy">Todo se ejecuta en tu dispositivo: el texto que escribes no se envía a ningún servidor.</p>
+    </footer>
+  </div>
+
+  <!-- Plantilla de la tarjeta de resultado de una frase. No se ve: app.js la copia y la rellena. -->
+  <template id="single-result">
+    <article class="card result">
+      <div class="result-head">
+        <span class="badge"></span>
+        <span class="confidence"></span>
+      </div>
+      <p class="result-text"></p>
+      <p class="result-desc"></p>
+      <div class="bars"></div>
+    </article>
+  </template>
+
+  <!-- type="module" permite usar import en app.js. Por eso la web tiene que abrirse con un servidor
+       (http://...) y no haciendo doble clic en el archivo. -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>

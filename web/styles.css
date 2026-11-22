@@ -1,0 +1,396 @@
+/*
+  styles.css: el aspecto de la página.
+
+  - Los colores y medidas están definidos una sola vez como variables (--nombre) en :root.
+    Cambiándolos ahí se cambia toda la web.
+  - El modo oscuro redefine esas mismas variables cuando el sistema del visitante lo usa.
+  - Cada categoría tiene una clase (.cat-FUNCTIONAL...) que fija su color; los componentes
+    (etiquetas, barras, tarjetas) usan ese color, así un mismo estilo sirve para las cuatro.
+*/
+
+/* Variables de color del modo claro. --c-*: categorías; --q-*: niveles de la revisión de calidad. */
+:root {
+  --bg: #f6f7fb;
+  --bg-glow: rgba(79, 70, 229, 0.10);
+  --surface: #ffffff;
+  --surface-2: #f1f3f9;
+  --border: #e3e6ef;
+  --text: #151826;
+  --text-2: #5b6178;
+  --accent: #4f46e5;
+  --accent-hover: #4338ca;
+  --accent-text: #ffffff;
+  --shadow: 0 1px 2px rgba(16, 24, 40, 0.04), 0 8px 24px rgba(16, 24, 40, 0.06);
+
+  --c-functional: #2563eb;
+  --c-functional-bg: #e8f0fe;
+  --c-nonfunctional: #0d9488;
+  --c-nonfunctional-bg: #e0f5f2;
+  --c-business: #d97706;
+  --c-business-bg: #fdf1dc;
+  --c-constraint: #db2777;
+  --c-constraint-bg: #fce7f1;
+
+  --q-ok: #15803d;
+  --q-ok-bg: #dcfce7;
+  --q-warn: #c2410c;
+  --q-warn-bg: #ffedd5;
+  --q-info: #4f46e5;
+  --q-info-bg: #eef0ff;
+
+  --radius: 16px;
+  color-scheme: light;
+}
+
+/* Modo oscuro: se activa solo si el sistema del visitante lo tiene puesto. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d0f17;
+    --bg-glow: rgba(99, 102, 241, 0.16);
+    --surface: #161925;
+    --surface-2: #1d2131;
+    --border: #2a2f42;
+    --text: #eceef6;
+    --text-2: #9aa0b8;
+    --accent: #6366f1;
+    --accent-hover: #818cf8;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.35);
+
+    --c-functional: #60a5fa;
+    --c-functional-bg: rgba(96, 165, 250, 0.14);
+    --c-nonfunctional: #2dd4bf;
+    --c-nonfunctional-bg: rgba(45, 212, 191, 0.14);
+    --c-business: #fbbf24;
+    --c-business-bg: rgba(251, 191, 36, 0.14);
+    --c-constraint: #f472b6;
+    --c-constraint-bg: rgba(244, 114, 182, 0.14);
+
+    --q-ok: #4ade80;
+    --q-ok-bg: rgba(74, 222, 128, 0.14);
+    --q-warn: #fb923c;
+    --q-warn-bg: rgba(251, 146, 60, 0.16);
+    --q-info: #a5b4fc;
+    --q-info-bg: rgba(129, 140, 248, 0.16);
+    color-scheme: dark;
+  }
+}
+
+/* Base: el ancho de los elementos incluye su relleno y borde (más fácil de maquetar). */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--text);
+  background:
+    radial-gradient(900px 420px at 50% -120px, var(--bg-glow), transparent 70%),
+    var(--bg);
+  min-height: 100vh;
+}
+
+/* Contenedor central: como mucho 820 px de ancho, centrado. */
+.page {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+}
+
+/* ---------- top bar ---------- */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.1rem; }
+.brand-mark svg { width: 30px; height: 30px; display: block; }
+.brand-mark rect { fill: var(--accent); }
+.brand-mark path { stroke: #fff; stroke-width: 2.5; stroke-linecap: round; fill: none; }
+
+.lang-switch {
+  display: flex;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 3px;
+}
+.lang-switch button {
+  border: 0;
+  background: transparent;
+  color: var(--text-2);
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.lang-switch button[aria-pressed="true"] { background: var(--accent); color: var(--accent-text); }
+
+/* ---------- hero ---------- */
+.hero { text-align: center; padding: 28px 0 32px; }
+.eyebrow {
+  display: inline-block;
+  margin: 0 0 14px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.hero h1 {
+  margin: 0 auto 14px;
+  max-width: 620px;
+  font-size: clamp(1.9rem, 5vw, 2.8rem);
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+}
+.subtitle { margin: 0 auto; max-width: 560px; color: var(--text-2); font-size: 1.05rem; }
+
+/* ---------- tarjetas, cuadro de texto, ejemplos y botón ---------- */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 22px;
+}
+
+.label { display: block; font-weight: 600; margin-bottom: 8px; }
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  min-height: 110px;
+  padding: 14px 16px;
+  font: inherit;
+  color: var(--text);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 4px var(--bg-glow); }
+
+.hint { margin: 8px 0 0; font-size: 0.85rem; color: var(--text-2); }
+
+.examples { margin-top: 18px; }
+.examples-title { font-size: 0.85rem; font-weight: 600; color: var(--text-2); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.chip {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: border-color 0.15s, transform 0.15s;
+}
+.chip:hover { border-color: var(--accent); transform: translateY(-1px); }
+.chip .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+/* Mensaje de estado y barra de progreso de la descarga del modelo. */
+.status { flex: 1 1 220px; min-width: 0; font-size: 0.85rem; color: var(--text-2); }
+.status.error { color: #dc2626; }
+.status.ready .status-text::before {
+  content: "";
+  display: inline-block;
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: #16a34a;
+  margin-right: 8px;
+}
+.progress { margin-top: 6px; height: 6px; border-radius: 999px; background: var(--surface-2); overflow: hidden; }
+.progress-bar { height: 100%; width: 0; background: var(--accent); border-radius: 999px; transition: width 0.2s; }
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 0;
+  background: var(--accent);
+  color: var(--accent-text);
+  font: inherit;
+  font-weight: 600;
+  padding: 11px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.15s;
+}
+.btn-primary:hover:not(:disabled) { background: var(--accent-hover); transform: translateY(-1px); }
+.btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+.btn-primary kbd {
+  font: inherit;
+  font-size: 0.72rem;
+  padding: 1px 6px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* ---------- resultados ---------- */
+/* .result: tarjeta de una frase. .bar-*: barras de probabilidad. .batch-*: lista de varias frases. */
+.results { margin-top: 20px; display: grid; gap: 14px; }
+.results:empty { display: none; }
+
+.result { animation: rise 0.3s ease-out; }
+.result-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--cat);
+  background: var(--cat-bg);
+}
+.badge::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--cat); }
+.confidence { font-size: 0.9rem; color: var(--text-2); }
+.confidence strong { color: var(--text); font-size: 1.15rem; }
+.result-text { margin: 16px 0 6px; font-size: 1.02rem; font-style: italic; overflow-wrap: anywhere; }
+.result-desc { margin: 0 0 18px; color: var(--text-2); font-size: 0.92rem; }
+
+.bars { display: grid; gap: 10px; }
+.bar-row { display: grid; grid-template-columns: minmax(110px, 170px) 1fr 52px; align-items: center; gap: 12px; font-size: 0.88rem; }
+.bar-label { color: var(--text-2); }
+.bar-track { height: 10px; border-radius: 999px; background: var(--surface-2); overflow: hidden; }
+.bar-fill { height: 100%; width: 0; border-radius: 999px; background: var(--cat); transition: width 0.6s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.bar-value { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
+
+.batch-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 14px;
+  align-items: center;
+  padding: 12px 0;
+  border-top: 1px solid var(--border);
+}
+.batch-row:first-of-type { border-top: 0; padding-top: 0; }
+.batch-row:last-child { padding-bottom: 0; }
+.batch-text { overflow-wrap: anywhere; font-size: 0.95rem; }
+.batch-meta { display: flex; align-items: center; gap: 10px; justify-self: end; }
+.batch-meta .badge { font-size: 0.8rem; padding: 4px 10px; }
+.batch-meta .pct { font-variant-numeric: tabular-nums; color: var(--text-2); font-size: 0.85rem; min-width: 40px; text-align: right; }
+.batch-title { margin: 0 0 12px; font-size: 0.95rem; color: var(--text-2); font-weight: 600; }
+
+/* ---------- calidad de la redacción ---------- */
+/* Color según el nivel: verde = clara, azul = se puede mejorar, naranja = conviene revisarla. */
+.q-level-ok { --q: var(--q-ok); --q-bg: var(--q-ok-bg); }
+.q-level-minor { --q: var(--q-info); --q-bg: var(--q-info-bg); }
+.q-level-review { --q: var(--q-warn); --q-bg: var(--q-warn-bg); }
+
+.quality { margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--border); }
+.quality-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+.quality-head h3 { margin: 0; font-size: 1rem; }
+.quality-ok { margin: 0; font-size: 0.9rem; color: var(--text-2); }
+.quality-note { margin: 12px 0 0; font-size: 0.75rem; color: var(--text-2); }
+
+.q-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--q);
+  background: var(--q-bg);
+}
+.batch-meta .q-pill { padding: 2px 8px; font-size: 0.75rem; }
+
+/* Términos resaltados dentro del texto del requisito. */
+.q-mark {
+  color: inherit;
+  background: var(--q-warn-bg);
+  border-bottom: 2px solid var(--q-warn);
+  border-radius: 3px;
+  padding: 0 2px;
+}
+.q-mark.q-info { background: var(--q-info-bg); border-bottom-color: var(--q-info); }
+
+/* Lista de problemas: la franja de la izquierda indica si es importante (naranja) o una sugerencia (azul). */
+.issues { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.issue { padding: 10px 14px; border-radius: 10px; background: var(--surface-2); border-left: 3px solid var(--sev); }
+.issue.q-warning { --sev: var(--q-warn); }
+.issue.q-info { --sev: var(--q-info); }
+.issue strong { display: block; font-size: 0.9rem; overflow-wrap: anywhere; }
+.issue p { margin: 2px 0 0; font-size: 0.85rem; color: var(--text-2); }
+
+/* Caja "Estructura recomendada". */
+.template { margin-top: 12px; padding: 12px 14px; border: 1px dashed var(--border); border-radius: 10px; }
+.template-title { margin: 0 0 4px; font-size: 0.75rem; font-weight: 700; color: var(--text-2); text-transform: uppercase; letter-spacing: 0.04em; }
+.template-pattern { margin: 0; font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 0.86rem; overflow-wrap: anywhere; }
+.template-pattern .slot { color: var(--accent); font-weight: 600; }
+.template-example { margin: 6px 0 0; font-size: 0.85rem; color: var(--text-2); font-style: italic; }
+
+/* Desplegable "Ver N sugerencias" de la lista: ocupa todo el ancho de la fila. */
+.batch-quality { grid-column: 1 / -1; }
+.batch-quality summary { cursor: pointer; width: fit-content; font-size: 0.85rem; font-weight: 600; color: var(--accent); }
+.batch-quality .quality { margin-top: 10px; padding-top: 0; border-top: 0; }
+
+/* ---------- tarjetas de categorías ---------- */
+.categories { margin-top: 44px; }
+.categories h2 { font-size: 1.25rem; letter-spacing: -0.01em; margin: 0 0 14px; }
+.category-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
+.category {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  border-top: 4px solid var(--cat);
+}
+.category h3 { margin: 0 0 6px; font-size: 1rem; color: var(--cat); }
+.category p { margin: 0; color: var(--text-2); font-size: 0.9rem; }
+.category .example { margin-top: 10px; font-size: 0.85rem; font-style: italic; color: var(--text); }
+
+/* Color de cada categoría: define --cat y --cat-bg, que usan las etiquetas, barras y tarjetas. */
+.cat-FUNCTIONAL { --cat: var(--c-functional); --cat-bg: var(--c-functional-bg); }
+.cat-NON_FUNCTIONAL { --cat: var(--c-nonfunctional); --cat-bg: var(--c-nonfunctional-bg); }
+.cat-BUSINESS_RULE { --cat: var(--c-business); --cat-bg: var(--c-business-bg); }
+.cat-CONSTRAINT { --cat: var(--c-constraint); --cat-bg: var(--c-constraint-bg); }
+
+/* ---------- footer ---------- */
+.footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); text-align: center; color: var(--text-2); font-size: 0.85rem; }
+.footer p { margin: 4px 0; }
+
+/* Animación de entrada de los resultados (suben un poco mientras aparecen). */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* Móvil (pantallas de 560 px o menos): botón a todo el ancho y filas en una columna. */
+@media (max-width: 560px) {
+  .card { padding: 18px; }
+  .btn-primary { width: 100%; justify-content: center; }
+  .btn-primary kbd { display: none; }
+  .bar-row { grid-template-columns: 1fr 48px; }
+  .bar-row .bar-label { grid-column: 1 / -1; }
+  .batch-row { grid-template-columns: 1fr; gap: 6px; }
+  .batch-meta { justify-self: start; }
+}
+
+/* Si el visitante ha pedido "reducir movimiento" en su sistema, se quitan las animaciones. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

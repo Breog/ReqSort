@@ -1,0 +1,7 @@
+# Solo hace falta subir web/ (y vercel.json). Todo esto es local y pesado.
+.venv/
+model/
+checkpoints/
+outputs/
+data/
+training/

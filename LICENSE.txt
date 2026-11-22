@@ -1,0 +1,35 @@
+REQSORT — PARTIAL USE LICENSE 1.0
+
+Copyright (c) 2026 Manuel Breogán Pazos Otero
+
+This license applies to the source code, datasets, trained model files and other materials in this repository created by the copyright holder (the "Project"), except for the third-party components listed at the end of this file.
+
+Permission is granted to view, access, study, and evaluate the Project for personal, educational, academic, and non-commercial purposes, and to use the publicly deployed web application.
+
+The following activities are NOT permitted without prior written permission from the copyright holder:
+
+* Copying or reproducing the source code, datasets or model files, in whole or in substantial part.
+* Redistributing or republishing the source code, datasets or model files.
+* Incorporating the source code, datasets or model files, or substantial portions of them, into other software projects.
+* Publishing modified, adapted, or derivative versions of the Project.
+* Using the Project or substantial portions of it for commercial purposes.
+* Selling, sublicensing, or otherwise distributing the Project or derivative works.
+* Presenting the Project, or substantial portions of it, as one's own work.
+
+The Project may be publicly accessible for portfolio, educational, academic, and evaluation purposes. Public access to the repository does not grant permission to copy, modify, redistribute, or reuse the Project beyond the permissions expressly stated in this license.
+
+Any use not expressly permitted by this license requires prior written permission from the copyright holder.
+
+THE PROJECT IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. THE CLASSIFICATIONS AND WORDING SUGGESTIONS PRODUCED BY THE APPLICATION ARE AUTOMATIC AND MAY BE INCORRECT.
+
+For permission requests or uses not covered by this license, please contact the copyright holder.
+
+---
+
+THIRD-PARTY COMPONENTS
+
+The following components are not covered by this license and remain under their own licenses:
+
+* DistilBERT base model (distilbert/distilbert-base-uncased), by Hugging Face — Apache License 2.0. The model in web/ai/ is a fine-tuned derivative of it.
+* Transformers.js (@huggingface/transformers), loaded from a CDN by the web application — Apache License 2.0.
+* Inter typeface, loaded from Google Fonts — SIL Open Font License 1.1.
