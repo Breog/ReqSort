@@ -18,7 +18,7 @@ El modelo es **DistilBERT** ajustado (*fine-tuning*) con un dataset propio de un
 
 ### 🌐 Aplicación
 
-**Demo:** 
+**Demo:** https://reqsort.vercel.app/
 
 *La primera visita descarga el modelo (~64 MB); después queda en la caché del navegador.*
 
@@ -78,7 +78,7 @@ The model is **DistilBERT** fine-tuned on a custom dataset of about 1,400 requir
 
 ### 🌐 Application
 
-**Live Demo:** 
+**Live Demo:** https://reqsort.vercel.app/ 
 
 *The first visit downloads the model (~64 MB); after that it stays in the browser cache.*
 
